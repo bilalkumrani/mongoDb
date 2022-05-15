@@ -1,0 +1,84 @@
+
+
+- The data is stored in JSON format
+
+Drawbacks:
+	space consuming
+	slow
+	supportd basic number of basic datatypes
+	
+	
+	How mongoDb solves these problems:
+	
+- MongoDb stores data in memeory in BSON format which is Binray Json
+- optimized for speed, space, flexiblity
+- goal was to archieve high performance and general purpose focus
+
+Data support in mongoDB?
+- String
+- Boolean
+- Number
+- Array
+- Date
+- Raw Binary
+
+
+
+How to import and export Data ?
+
+
+Importing and exporting in JSON:
+- mongoimport
+- mongoexport
+
+
+Importing and exporting in BSON:
+- mongorestore
+- mongodump
+
+
+
+
+
+	URI string:
+	uniform resoruce identifier:
+	srv - establish a secure connection
+	
+	current formate of uri string:
+	mongodb+srv://user:password@clusterURI.mongodb.net/database
+
+
+
+
+
+
+
+
+mongodump --uri "mongodb+srv://<your username>:<your password>@<your cluster>.mongodb.net/sample_supplies"
+
+mongoexport --uri="mongodb+srv://<your username>:<your password>@<your cluster>.mongodb.net/sample_supplies" --collection=sales --out=sales.json
+
+mongorestore --uri "mongodb+srv://<your username>:<your password>@<your cluster>.mongodb.net/sample_supplies"  --drop dump
+
+mongoimport --uri="mongodb+srv://<your username>:<your password>@<your cluster>.mongodb.net/sample_supplies" --drop sales.json
+
+
+
+
+- Atlas ui provides us with data explorer so we can query data using the GUI.
+
+
+	- Use show dbs and show collections for abailable namespaces 
+	- find() returns a cursor with documents that match the find query
+	- count() returns the number of documents that match the find query
+	- pretty() formats the documents in the cursor
+	
+	
+	
+	
+	
+
+
+
+
+
