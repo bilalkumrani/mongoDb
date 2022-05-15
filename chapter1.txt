@@ -1,0 +1,57 @@
+
+
+What is mongoDB database?
+
+- database meaning a structured way to store and retrive data.
+- It is nosql database, it means it doesnt use legacy approach.
+- we store data in organize way but not in rows and columns.
+- data in mongodb is stored as documents.
+- these documents are stored in what we call collections of documents.
+
+
+
+What is document in MongoDb?
+
+- It is a way to organize and store data as a set of field-value pair.
+
+What is collection ?
+- An organized store of documents in mongoDb, usually with common fields between documents.
+
+
+What is MongoDb atlas ?
+
+- It is database as a service
+- MongoDb is used at the core of Atlas to store and retrieval of data.
+
+
+
+What is cluster ?
+- A group of servers that stores your data.
+
+
+What is replica set?
+- Few connected mongodb instances that store the same data.
+
+
+What is an instance ?
+
+- A single machine locally or in the cloud running a certain software.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
