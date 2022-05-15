@@ -1,0 +1,48 @@
+
+
+	why id is important ?
+	- every document must have a unique_id value
+	-  when we insert new doc mongo populates the _id field with a value of objectId() type
+	
+	- Identical documents can exist in the same collection as long as their _id values are different.
+	- Mongodb has schema validation functionality allows you to enforce document structure.
+	
+	
+	
+	::Inserting Documents: Order
+	
+	 - db.inspections.insert([ { "test": 1 }, { "test": 2 }, { "test": 3 } ])
+	 
+	 - where ever it finds _id field duplicate the insertion operation will be stopped there
+	 - if we want to insert all unique docs then we have to give another object {ordered:false}
+	 
+	 
+	 
+	 ::Updating database
+	 
+	 some update operators:
+	 $inc - increment field value by specified amount
+	 $set - sets field value to a new specified value
+	 $push - adds an element field
+	 
+	
+	Deleting documents and collections:
+	
+	- drop()
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
